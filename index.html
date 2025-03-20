@@ -1,0 +1,461 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rifat Fatima - Web Developer from Pakistan</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Open+Sans:wght@400;500;700&family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#">
+        <h1 class="logo">Rifat Fatima</h1>
+      </a>
+
+      <button class="nav-toggle-btn" aria-label="Toggle Menu" data-nav-toggle-btn>
+        <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
+        <ion-icon name="close-outline" class="close-icon"></ion-icon>
+      </button>
+
+      <nav class="navbar container">
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link" data-nav-link>About</a>
+          </li>
+
+          <li>
+            <a href="#portfolio" class="navbar-link" data-nav-link>Portfolio</a>
+          </li>
+
+          <li>
+            <a href="#skills" class="navbar-link" data-nav-link>Skills</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+
+          <li>
+            <a href="./Image/Resume  Rifat Fatima (2).docx" download class="btn btn-primary">Download CV</a>
+        </li>        
+
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home">
+        <div class="container">
+
+          <div class="hero-banner">
+
+            <img src="./Image/butterfly filters.jpg" width="800" height="864" loading="lazy" alt="Ethan's Photo"
+              class="img-cover">
+
+            <div class="elem elem-1">
+              <p class="elem-title">2</p>
+
+              <p class="elem-text">Years of Success</p>
+            </div>
+
+            <div class="elem elem-2">
+              <p class="elem-title">50+</p>
+
+              <p class="elem-text">Projects Completed</p>
+            </div>
+
+            <div class="elem elem-3">
+              <ion-icon name="trophy"></ion-icon>
+            </div>
+
+
+          </div>
+
+          <div class="hero-content">
+
+            <h2 class="hero-title">
+              <span>Hello I'm</span>
+              <strong>Rifat Fatima</strong> Web Developer Pakistan
+            </h2>
+
+            <p class="hero-text">
+              I am specialize in creating modern, responsive websites and bringing creative ideas to life.
+            </p>
+
+            <div class="btn-group">
+              <a href="#contact" class="btn btn-primary blue">Get a Quote</a>
+
+              <a href="#about" class="btn">About Me</a>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="about">
+        <div class="container">
+
+          <figure class="about-banner">
+
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAflBMVEUAAAD///+/v7/o6OjDw8Oenp5LS0vPz8+NjY0pKSm6urocHBzr6+umpqbIyMivr69vb2+WlpaFhYVXV1d6enqkpKQzMzMJCQnX19dfX1+0tLSbm5tra2tQUFD39/c6OjpBQUEUFBQeHh7e3t5kZGSJiYkvLy8kJCQ+Pj5GRkbTD6XbAAAEi0lEQVR4nO3Y6XKjOhAF4G4Ws5jdQDA2JN6d93/BaQmEt7pz/8Qep+p8lQog1oOEwCICAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHgnXjDOLOLEsqx45bqVlc+m9b5nrVJvddILdRU6slESVwHVseNYSTjzHctxqsqx2lUoR3COw35lqhZqc5habRV/Z7pUnyNxnPwVATuOp/k9M6+HQvaGonXPnUwCm6uhYGvLRuUwf464JXKYk5pmepdCVn6aw6mF0CyEzP1ZzaykVE03pez3zGRGMpxv4DFnNF6GvraceTGs6k3mjLkx23e9/LP0pkNCOl8lJK9nHltI3bC5lZLwQybSCNh5RqI7x4j50lZCk1Bi9MNkzKWypnpmwVcXJlVIjtrSJKTDVUI3nirRlQr1h1l7SCi7xh49XxwMWQZTwny4XqmDYlx1kluvn7CbhOrmJPoOmYTUXxLGGx4r8eiXdwnXcr+2L0i4iVWq0iyG43M477mRq1jKBX6ZdVLZKzV9SOjoSFPC8Htam1LL6kmVrHRTh/K/US1iOvHzrM70xWybRUnY+vnKYU91L+RLwo1ZtxuTPSQc2uGU0L90wzFJC2HphY/5bcJ5EF51cE+lbrA3VhzphOXmdFykbKvLuUlojxEeEg6tckp4mk9rY31Eqaxqfpswt/hFCUvVUXaXznF6Dktdtr7u+6Oxq3lIOJhdOqWJhDiqnjNw6b6VnnVCf36/y09zqjiOXbn2sWVNCVUfU+qO3TwqqtPQL46bhO409x8J5V3CVR7cJZRnvFK3K9rc7/LD9kNHuZ5evZeEktrVzdSkKUyC89X7cPv3hCrEJw891H3Cr1ad+GfzPLKD6ZzDXGISqsa1JF0D43dXNPVHEffm1ruXXkX63d3D8dU/+eRRbVHeP+NXUT+8Dw+07Z+dMDF3tR2r5dN8tc1t8x3gcn8atnU+xt2+p0os4uuDTZ8/hqufta/h8ZUjRrq0HL/aKOv5uQlLO7Iji+gjDW3bjppq6aipFaeptUumPmCe2qnv7pLrq3ftvvX9PDbPaNG2TaR3TsOT2eggRdFO7pN1okW4k/WRbX0XjppJ5Rx2L3t80FvY1MFDWf35WAYAAAAA7yN50fDDP5Px9l9fwpNNw4ujefdvruNp2uauoHnFuPVrLPeLTn79lqrO1vI7ebagrjvlw0/m856WHXVqWIBmWf3XA72pulmv5Tf8Lpp786/me7394HLDGfUHtfac7craXtdNQBvPL35jX9TxknYh5RxQv+d6FpHVkJdQHJH6JVxkXBdc75lqzl3nN9Zh75LPtJBKaxs7J+dQcLDnTcfdVg9lSP+j/irqm/0meMFg/U8Leup6P0g9KvqAifJlU6nUO4d01xruyNrRIaKyD6gu/u9w78jJsrYoP6UFyvzSn1NaLNsi81elGktacr3kI8kmtMrKX1iDSqD/TnqgtL4UTMNRetBMjbMd32T4DAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAbvwBGgc1D2XW5FoAAAAASUVORK5CYII=" loading="lazy" alt="Ethan's Photo"
+              class="img-cover">
+
+            <div class="abs-icon abs-icon-1">
+              <ion-icon name="logo-css3"></ion-icon>
+            </div>
+
+            <div class="abs-icon abs-icon-2">
+              <ion-icon name="logo-javascript"></ion-icon>
+            </div>
+
+            <div class="abs-icon abs-icon-3">
+              <ion-icon name="logo-react"></ion-icon>
+            </div>
+
+          </figure>
+
+          <div class="about-content">
+
+            <p class="section-subtitle">I'm a Developer</p>
+
+            <h2 class="h2 section-title">I Develop Application that Help People</h2>
+
+            <p class="section-text">
+              I'm Rifat, a passionate and creative web developer dedicated to building sleek, functional, and user-friendly websites. As a Grade 8 student, I continuously work on enhancing my skills in web development to turn ideas into reality through clean, efficient code and visually appealing designs
+            </p>
+
+            <p class="section-text">
+              I enjoy tackling new challenges and pushing my creative boundaries to deliver professional web experiences. From responsive layouts to dynamic interactions, I strive to create engaging websites that leave a lasting impression. Let's build something amazing together!
+            </p>
+
+            <a href="#portfolio" class="btn btn-primary blue">View Portfolio</a>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PORTFOLIO
+      -->
+
+      <section class="section portfolio" id="portfolio">
+        <div class="container">
+
+          <p class="section-subtitle">Portfolio</p>
+
+          <h2 class="h2 section-title">My Amazing Works</h2>
+
+          <p class="section-text">
+            Explore a showcase of my best projects, crafted with creativity, precision, and a passion for excellence.
+          </p>
+
+          <ul class="portfolio-list">
+
+            <li>
+              <div class="portfolio-card" style="position: relative; overflow: hidden; border-radius: 12px;">
+                <!-- Video Element -->
+                <video src="./Video/bandicam 2025-02-23 12-42-25-034.mp4" autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;"></video>
+              </div>
+            </li>
+
+            <li>
+              <div class="portfolio-card" style="position: relative; overflow: hidden; border-radius: 12px;">
+                <!-- Video Element -->
+                <video src="./Video/bandicam 2025-01-06 15-06-51-607.mp4" autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;"></video>
+              </div>
+            </li>
+
+            <li>
+              <div class="portfolio-card" style="position: relative; overflow: hidden; border-radius: 12px;">
+                <!-- Video Element -->
+                <video src="./Video/bandicam 2025-01-13 17-36-37-906.mp4" autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;"></video>
+              </div>
+            </li>
+
+            <li>
+              <div class="portfolio-card" style="position: relative; overflow: hidden; border-radius: 12px;">
+                <!-- Video Element -->
+                <video src="./Video/bandicam 2024-12-05 14-36-12-611.mp4" autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;"></video>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SKILLS
+      -->
+
+      <section class="section skills" id="skills">
+        <div class="container">
+
+          <p class="section-subtitle">My Skills</p>
+
+          <h2 class="h2 section-title">I Develop Skills Regularly</h2>
+
+          <p class="section-text">
+            Dliquip ex ea commo do conse namber onequa ute irure dolor in reprehen derit in voluptate
+          </p>
+
+          <ul class="skills-list">
+
+            <li class="skills-item">
+              <div class="wrapper" style="width: 95%">
+                <h3 class=" skills-title">HTML</h3>
+
+                <data class="skills-data" value="95">95%</data>
+              </div>
+
+              <div class="skills-progress-box">
+                <div class="skills-progress" style="width: 95%"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="wrapper" style="width: 75%">
+                <h3 class="skills-title">React</h3>
+
+                <data class="skills-data" value="75">75%</data>
+              </div>
+
+              <div class="skills-progress-box">
+                <div class="skills-progress" style="width: 75%"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="wrapper" style="width: 90%">
+                <h3 class="skills-title">CSS</h3>
+
+                <data class="skills-data" value="90">90%</data>
+              </div>
+
+              <div class="skills-progress-box">
+                <div class="skills-progress" style="width: 90%"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="wrapper" style="width: 70%">
+                <h3 class="skills-title">JAVASCRIPT</h3>
+
+                <data class="skills-data" value="70">70%</data>
+              </div>
+
+              <div class="skills-progress-box">
+                <div class="skills-progress" style="width: 70%"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="wrapper" style="width: 80%">
+                <h3 class="skills-title">BOOTSTRAP</h3>
+
+                <data class="skills-data" value="80">80%</data>
+              </div>
+
+              <div class="skills-progress-box">
+                <div class="skills-progress" style="width: 80%"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="wrapper" style="width: 75%">
+                <h3 class="skills-title">ECMASCRIPT</h3>
+
+                <data class="skills-data" value="75">75%</data>
+              </div>
+
+              <div class="skills-progress-box">
+                <div class="skills-progress" style="width: 75%"></div>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CONTACT
+      -->
+
+      <section class="section contact" id="contact">
+        <div class="container">
+
+          <div class="contact-card">
+
+            <p class="card-subtitle">Don't be shy</p>
+
+            <h2 class="h2 section-title">Drop Me a Line</h2>
+
+            <div class="wrapper">
+
+              <form action="" class="contact-form">
+
+                <input type="text" name="name" placeholder="Name" required class="contact-input">
+
+                <input type="email" name="email" placeholder="Email" required class="contact-input">
+
+                <textarea name="message" placeholder="Message" required class="contact-input"></textarea>
+
+                <button type="submit" class="btn-submit">Submit Message</button>
+
+              </form>
+
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <!-- <footer class="footer">
+    <div class="container">
+
+      <p class="copyright">
+        &copy; 2022 <a href="#" class="copyright-link">codewithsadee</a>. All Rights Reseverd
+      </p>
+
+      <ul class="footer-list">
+        <li>
+          <a href="#" class="footer-link">Terms & Condition</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Privacy Policy</a>
+        </li>
+      </ul>
+
+    </div>
+  </footer> -->
+
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Left Side: Let's Get in Touch -->
+      <div class="footer-section">
+        <h2>Let's Get in Touch</h2>
+        <p>I'm open to new projects and opportunities. Feel free to reach out!</p>
+        <ul>
+          <li>Email: rifat@example.com</li>
+          <li>Phone: +123 456 7890</li>
+          <li>Location: Your City, Your Country</li>
+        </ul>
+      </div>
+  
+      <!-- Right Side: Estimate Your Project? -->
+      <div class="footer-section">
+        <h2>Estimate Your Project?</h2>
+        <p>Let me help you bring your ideas to life. Share your project details for a free quote.</p>
+        <form class="estimate-form">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea placeholder="Project Details" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </footer>
+  
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-to-top" data-back-to-top>BACK TOP</a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
