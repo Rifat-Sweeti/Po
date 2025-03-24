@@ -1152,3 +1152,11 @@ textarea.contact-input {
   background-color: var(--klein-blue); /* Lighter Gold */
   transform: scale(1.05);
 }
+
+.btn-about:hover {
+  color: var(--orange-soda);
+}
+
+.btn-cv:hover {
+  background-color: #142EB3;
+}
